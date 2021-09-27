@@ -3,6 +3,9 @@ var parser = require('xml2json');
 
 async function xmlTojson(req, res) {
 	try {
+		res.header("Access-Control-Allow-Origin", "*");
+  	res.header("Access-Control-Allow-Headers", "Origin, X-Requeted-With, Content-Type, Accept, Authorization, RBR");
+
 		fs.readFile( './jobTemplate.xml', function(err, data) {
 			var json = JSON.parse(parser.toJson(data, {reversible: true}));
 
@@ -65,6 +68,9 @@ async function xmlTojson(req, res) {
 
 async function jsonToxml(req, res) {
 	try {
+		res.header("Access-Control-Allow-Origin", "*");
+  	res.header("Access-Control-Allow-Headers", "Origin, X-Requeted-With, Content-Type, Accept, Authorization, RBR");
+
 		let project_info =  req.body.project_info;
     project_info.journal_info.hwp;
 

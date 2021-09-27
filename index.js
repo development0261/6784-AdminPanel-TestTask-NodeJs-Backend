@@ -3,7 +3,9 @@ var bodyParser = require("body-parser");
 var app = express();
 var fs = require("fs");
 var parser = require('xml2json');
+const cors = require('cors');
 
+app.use(cors());
 app.use(bodyParser.json());
 
 let projectDetailsController = require('./controller/ProjectDetails');
