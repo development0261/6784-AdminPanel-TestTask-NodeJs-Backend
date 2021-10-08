@@ -1,0 +1,110 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    background-color: #f9f9f9;
+}
+a {
+    display: inline-block;
+}
+.breadcrumbs-header {
+    border-bottom: 1px solid rgb(229, 231, 235);
+    padding: 12px 0;
+}
+
+.breadcrumbs-header .breadcrumb {
+    margin: 0;
+}
+
+.breadcrumbs-header .breadcrumb a {
+    color: #000;
+}
+
+.breadcrumbs-header li.active {
+    color: rgb(139, 92, 246);
+}
+.active-tab {
+    background: #fff;
+    padding: 10px 12px 10px 12px;
+    border-bottom-color: #fff;
+    position: relative;
+    bottom: -5px;
+    font-size: 17px !important;
+  }
+  .tabs-section button {
+    position: relative;
+    top: 5px;
+  }
+  .error {
+      display: none;
+  }
+  .form-group--error .error {
+      display: block !important;
+  }
+  .form-group--error input {
+      border-color: rgb(239, 68, 68);
+  }
+  .form-group--error textarea {
+      border-color: rgb(239, 68, 68);
+  }
+  
+  
+  @media only screen and (max-width: 1250px) {
+  .journal-form label {
+      width: 100%;
+      margin: 0 0 8px 0;
+  }
+  
+  .journal-form > div {
+      flex-wrap: wrap;
+  }
+  
+  .journal-form div, .journal-form div {
+      width: 100%;
+  }
+  }
+  
+  @media only screen and (max-width: 991px) {
+  .form-row-section > div {
+      padding: 0 !important;
+      width: 100%;
+  }
+  
+  .form-row-section {
+      display: block;
+      padding-right: 20px;
+  }
+  }
+  @media only screen and (max-width: 767px) {
+  .form-row-section-outer {
+      display: block;
+  }
+  
+  .form-row-section-outer > div {
+      border: none;
+      padding: 0;
+  }
+  
+  .journal-form > div {
+      padding: 0;
+  }
+  .form-row-section {
+      padding: 0 !important;
+  }
+  .form-row-section-outer > div:last-child {
+      margin-top: 30px;
+  }
+  .form-header-section > ul {
+      width: 100%;
+  }
+  .form-header-section > ul.form-edit-option {order: 1;}
+  .form-header-section > .tabs-section {
+      order: 3;
+  }
+  }
+  @media only screen and (max-width: 500px) {
+  .form-edit-option li {
+      margin-bottom: 8px;
+  }
+  }
