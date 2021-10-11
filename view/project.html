@@ -454,7 +454,7 @@
 									}
 								}
 							};
-							let url = prcess.env.BASE_URL + "project-detail";
+							let url = "project-detail";
 							axios.post(url, projectInfoDetails).then((res) => {
 								if (res.status != undefined && res.status == 200) {
 									this.resetForm();
